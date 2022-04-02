@@ -12,4 +12,5 @@ DRY Utility
 Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Contact
+Name: Tim Dai
 
