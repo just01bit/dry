@@ -9,7 +9,7 @@ public class DRY {
 		{
 			URL url = new URL(urlStr);
 			InputStream is = url.openStream();
-			BufferedReader buffer = new BufferedReader(is);			
+			BufferedReader buffer = new BufferedReader(is);	// this does not work		
 			System.out.printf(buffer.toString());
 		} 
 		catch (Exception e) {
