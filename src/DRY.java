@@ -15,6 +15,7 @@ public class DRY {
 			System.out.printf(buffer.readLine());
 
 			// TODO: JSON parser
+			// look for a lib to parse JSON response
 		} 
 		catch (Exception e) {
 			System.out.printf(e.getMessage());
