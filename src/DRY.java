@@ -25,29 +25,33 @@ public class DRY {
 	*/
 	private static void rtfLog2JSON(String filePath){
 		filePath = "C:\\Users\\ldai3\\OneDrive\\Desktop\\nodesoutput_20220428";
-		String outputJSON = "";
+
+		String outputJSON = "{""rtf"": {";
+		String sectionType = "";
+		Boolean newSection = true;
+		String key = "";
+		String value = "";
+
 		try 
 		{
 			FileInputStream fileInputStream = new FileInputStream(filePath);
 			InputStreamReader isr = new InputStreamReader(fileInputStream);	
 			BufferedReader buffer = new BufferedReader(isr);
 
-			System.out.println(splitStr(buffer.readLine())[1]);
-			System.out.println(buffer.readLine());
-			System.out.println(buffer.readLine());
-
+			while (buffer.ready()) {
+				String[] lineContent = splitStr(buffer.readLine());
+				if (lineContent.length == 0) {
+					newSection = true;
+					continue;
+				}
+				key = lineContent[0];
+				newSection = false;
+			}
 
 		} catch (Exception e) {
 			System.out.printf(e.getMessage());
 		}
 
-	}
-
-	/* 
-		split string by whitespace and return array
-	*/
-	private static String[] splitStr(String s) {
-		return s.split("\\s+");
 	}
 
 	/* 
@@ -70,4 +74,11 @@ public class DRY {
 			System.out.printf(e.getMessage());
 		}
 	}
+
+	/* 
+		split string by whitespace and return array
+	*/
+	private static String[] splitStr(String s) {
+		return s.split("\\s+");
+	}	
 }

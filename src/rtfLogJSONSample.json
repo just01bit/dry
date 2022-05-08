@@ -2,7 +2,7 @@
 			"rtf": {
 				"masters": [
 					{
-						"name": "10.241.212.61",
+						"Name": "10.241.212.61",
 						"Capacity": {
 							"cpu": 4,
 							"memory": "16247560Ki"
@@ -23,7 +23,7 @@
 						}						
 					},
 					{
-						"name": "10.241.212.62",
+						"Name": "10.241.212.62",
 						"Capacity": {
 							"cpu": 4,
 							"memory": "16247560Ki"
@@ -46,7 +46,7 @@
 				],
 				"nodes": [
 					{
-						"name": "10.241.212.61",
+						"Name": "10.241.212.61",
 						"Capacity": {
 							"cpu": 4,
 							"memory": "16247560Ki"
@@ -57,8 +57,8 @@
 						},
 						"pods": [
 							{
-								"namespace": "1aceaf0c-7953-4d59-8246-b7d286a48761",
-								"name": "testeg-entai-rm-vcp-01-5fb499c898-fbxzq",
+								"Namespace": "1aceaf0c-7953-4d59-8246-b7d286a48761",
+								"Name": "testeg-entai-rm-vcp-01-5fb499c898-fbxzq",
 								"cpu": {
 									"Requests": "100m (2%)",
 									"Limits": "600m (15%)"
@@ -68,7 +68,18 @@
 									"Limits": "1570Mi (2%)"
 								}								
 							},
-
+							{
+								"Namespace": "1aceaf0c-7953-4d59-8246-b7d286a48761",
+								"Name": "testeg-entai-rm-vcp-01-5fb499c898-fbxzq",
+								"cpu": {
+									"Requests": "100m (2%)",
+									"Limits": "600m (15%)"
+								},
+								"memory": {
+									"Requests": "1050Mi (1%)",
+									"Limits": "1570Mi (2%)"
+								}								
+							}
 						],	
 						"Allocated": {
 							"cpu": {
@@ -82,7 +93,7 @@
 						}										
 					},
 					{
-						"name": "10.241.212.61",
+						"Name": "10.241.212.61",
 						"Capacity": {
 							"cpu": 4,
 							"memory": "16247560Ki"
@@ -104,7 +115,18 @@
 									"Limits": "1570Mi (2%)"
 								}								
 							},
-
+							{
+								"namespace": "1aceaf0c-7953-4d59-8246-b7d286a48761",
+								"name": "testeg-entai-rm-vcp-01-5fb499c898-fbxzq",
+								"cpu": {
+									"Requests": "100m (2%)",
+									"Limits": "600m (15%)"
+								},
+								"memory": {
+									"Requests": "1050Mi (1%)",
+									"Limits": "1570Mi (2%)"
+								}								
+							}
 						],	
 						"Allocated": {
 							"cpu": {
